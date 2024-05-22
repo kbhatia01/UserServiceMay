@@ -1,2 +1,14 @@
-package org.scaler.userservice.config;public class UserServiceConfig {
+package org.scaler.userservice.config;
+
+import org.springframework.context.annotation.Bean;
+import org.springframework.context.annotation.Configuration;
+import org.springframework.security.crypto.bcrypt.BCryptPasswordEncoder;
+
+@Configuration
+public class UserServiceConfig {
+
+    @Bean
+    public BCryptPasswordEncoder getBcryptEncoder(){
+        return new BCryptPasswordEncoder();
+    }
 }

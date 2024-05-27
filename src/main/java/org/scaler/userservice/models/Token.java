@@ -12,7 +12,7 @@ import java.util.Date;
 public class Token extends BaseModel {
 
     private Date expiry;
-    private boolean is_valid;
+    private boolean active;
 
     private String value;
 
